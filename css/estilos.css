@@ -1,0 +1,22 @@
+/*fondo de la pagina*/
+body{
+	background-image: url("../Imagenes/morado.jpg");
+	width: 100%;
+  	height: 100%;
+}
+/*estilos del botton registrarse*/
+#l{
+    margin-left: 72px;
+    margin-top: -57px;
+}
+
+/*estilos del botton cancelar*/
+
+#k{
+    margin-left: 81px;
+    margin-top: -55px;
+}
+
+#j{
+    background-color: rgba(8, 252, 104, 0.49);
+}
