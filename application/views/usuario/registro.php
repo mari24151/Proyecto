@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--Link de jquery-->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <title>Registro</title>
     <!--estilos propios-->
     <link rel="stylesheet" type="text/css" href="css\estilos.css">
 
@@ -26,11 +25,11 @@
             </div>
             <div class="form-group">
                 <label for="correo" style=" color: cornsilk;">Correo</label><br>
-                <input type="text" class="form-control" id="email" name="email">
+                <input type="email" class="form-control" id="email" name="email">
             </div>
             <div class="form-group">
                 <label for="contrasena" style=" color: cornsilk;">Contrase&ntilde;a</label><br>
-                <input type="text" class="form-control" id="contrasena" name="contrasena">
+                <input type="password" class="form-control" id="contrasena" name="contrasena">
             </div>
             <br>
             <input type="submit" class="btn btn-default" value="Agregar">

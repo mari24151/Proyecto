@@ -9,7 +9,7 @@ class usuario extends CI_Controller {
 
     public function insertar(){
 
-        $this->load->model('Usuario_model','modelo');
+        $this->load->model('usuario_model','modelo');
 
         $this->modelo->nombre = $this->input->post('nombre');
         $this->modelo->email = $this->input->post('email');
