@@ -37,9 +37,13 @@
 | in the URL cannot be matched to a valid route.
 |
 */
+$route['inicio/proceso']="inicio/proceso";
+
+$route['logear/Inicio']="logear/Inicio";
+
 $route['usuario/insertar'] = "usuario/insertar";
 
-$route['default_controller'] = "usuario/registro";
+$route['default_controller'] = "usuario/login";
 
 $route['404_override'] = '';
 
