@@ -7,6 +7,7 @@ class usuario extends CI_Controller
     {
         $this->load->helper('html');
         $this->load->helper('form');
+        $this->load->library('email');
         $this->load->view('usuario/registro');
     }
 
@@ -76,9 +77,25 @@ class usuario extends CI_Controller
 
     public function envioCorreo($nombre, $correo)
     {
+        //configuracion del email
+        $config['protocol'] = 'sendmail';
+        $config['mailpath'] = '/usr/sbin/sendmail';
+        $config['charset'] = 'utf-8';
+        $config['wordwrap'] = TRUE;
+
+        $this->email->initialize($config);
+
+        //archivos de configuracion
+        $this->email->from('ale.24151@gmail.com', 'Alexa Rodríguez Méndez');
+        $this->email->to($correo,$nombre);
 
 
+        $this->email->subject('Cuenta activa');
+        $this->email->message('Tu cuenta ha sido activa, ya puedes iniciar seción con exito');
 
+        $this->email->send();
+
+        echo $this->email->print_debugger();
     }
 
     public function registroCompleto()
