@@ -1,13 +1,12 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class usuario extends CI_Controller
+ class usuario extends CI_Controller
 {
 
     public function registro()
     {
         $this->load->helper('html');
         $this->load->helper('form');
-        $this->load->library('email');
         $this->load->view('usuario/registro');
     }
 
@@ -50,12 +49,11 @@ class usuario extends CI_Controller
             $insertar = $this->modelo->insertar_usuario($this->modelo);
 
             if ($insertar) {
-
-                envioCorreo($nombre, $email);
-                $this->load->view('usuario/registroCompleto');
+                $this->envioCorreo($nombre, $email);
+               $this->registroCompleto();
             } else {
 
-                registro();
+                $this->registro();
 
             }
         }
@@ -75,21 +73,28 @@ class usuario extends CI_Controller
     }
 
 
-    public function envioCorreo($nombre, $correo)
+    public function envioCorreo($nombre, $email)
     {
         //configuracion del email
-        $config['protocol'] = 'sendmail';
-        $config['mailpath'] = '/usr/sbin/sendmail';
-        $config['charset'] = 'utf-8';
-        $config['wordwrap'] = TRUE;
 
-        $this->email->initialize($config);
+
+        $emailConfig = array(
+            'protocol' => 'smtp',
+            'smtp_host' => 'smtp.gmail.com',
+            'smtp_port' => 465,
+            'smtp_user' => 'ale.24151@gmail.com',
+            'smtp_pass' => 'amrm24151',
+            'mailtype'  => 'html',
+            'charset'   => 'iso-8859-1'
+        );
+
+        $this->load->library('email', $emailConfig);
+
+        $this->email->set_newline("rn");
 
         //archivos de configuracion
         $this->email->from('ale.24151@gmail.com', 'Alexa Rodríguez Méndez');
-        $this->email->to($correo,$nombre);
-
-
+        $this->email->to($email);
         $this->email->subject('Cuenta activa');
         $this->email->message('Tu cuenta ha sido activa, ya puedes iniciar seción con exito');
 
@@ -103,7 +108,7 @@ class usuario extends CI_Controller
         $this->load->helper('html');
         $this->load->view('usuario/registroCompleto');
 
-
     }
 
 }
+
