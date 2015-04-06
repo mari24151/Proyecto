@@ -49,7 +49,7 @@
             $insertar = $this->modelo->insertar_usuario($this->modelo);
 
             if ($insertar) {
-                $this->envioCorreo($nombre, $email);
+               // $this->envioCorreo($nombre, $email);
                $this->registroCompleto();
             } else {
 
@@ -73,7 +73,7 @@
     }
 
 
-    public function envioCorreo($nombre, $email)
+    public function envioCorreo()
     {
         //configuracion del email
 
@@ -94,7 +94,7 @@
 
         //archivos de configuracion
         $this->email->from('ale.24151@gmail.com', 'Alexa Rodríguez Méndez');
-        $this->email->to($email);
+        $this->email->to('ale.24151@gmail.com');
         $this->email->subject('Cuenta activa');
         $this->email->message('Tu cuenta ha sido activa, ya puedes iniciar seción con exito');
 

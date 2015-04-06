@@ -26,7 +26,7 @@
             <input class="form-control" type="text" id="asunto" name="asunto">
         </div>
         <br>
-        <textarea class="form-control"></textarea>
+        <textarea class="form-control" name="texto"></textarea>
     </form>
 
 </div>

@@ -29,7 +29,7 @@
                 <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Password">
             </div>
             <br>
-            <input type="submit" class="btn btn-default" value="Iniciar">
+            <a href="usuario/correo"><input type="button" class="btn btn-default" value="Iniciar"></a>
 
         <a href="usuario/registro" class="btn btn-default">Registrarse</a>
     </div>
