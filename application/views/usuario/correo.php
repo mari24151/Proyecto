@@ -19,16 +19,22 @@
 <div>
     <form action="" method="post">
         <div class="col-sm-10">
-            <input class="form-control" type="email" id="email" name="email">
+            <label for="email" style=" color: rgb(91, 250, 13);">Email</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="exemple@alguien.com">
         </div>
         <br>
-        <div>
-            <input class="form-control" type="text" id="asunto" name="asunto">
+        <div class="col-sm-10">
+            <label for="asunto" style=" color: rgb(91, 250, 13);">Asunto</label>
+            <input class="form-control" type="text" id="asunto" name="asunto" placeholder="Asunto">
         </div>
+        <br>
+        <br>
         <br>
         <textarea class="form-control" name="texto"></textarea>
+        <br>
+        <br>
+        <input type="button" name="enviar" class="btn btn-default" value="Aceptar">
     </form>
-
 </div>
 
 

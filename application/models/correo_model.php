@@ -3,9 +3,11 @@
 class correo_model extends CI_Model{
 
     public $id;
-    public $email;
+    public $emailFrom;
+    public $emailTo;
     public $asunto;
     public $texto;
+    public $pendiente;
 
     //constructor del modelo
     public function __construct(){
@@ -18,7 +20,8 @@ class correo_model extends CI_Model{
     //funcion de insertar
     function insertar_correo($datos){
 
-        $this->email = $datos->email;
+        $this->emailFrom = $datos->emailFrom;
+        $this->emailTo = $datos->emailTo;
         $this->asunto = $datos->asunto;
         $this->texto = $datos->texto;
 

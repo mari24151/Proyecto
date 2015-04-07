@@ -17,10 +17,15 @@
 
     public function insertar()
     {
+        $this->load->library('form_validation');
+
         //establece reglas de validacion
-        $this->form_validation->set_rules('email', 'Correo', 'required|is_unique[usuario.email]');
+        $this->form_validation->set_rules('emailFrom', 'CorreoDe', 'required');
+        $this->form_validation->set_rules('emailTo', 'CorreoPara', 'required');
         $this->form_validation->set_rules('asunto','Asunto','required');
-        $this->from_validation->set_rules('texto','Texto','required');
+        $this->form_validation->set_rules('texto','Texto','required');
+
+
 
         // Estable los mensajes de error
         $this->form_validation->set_message('required', 'El campo %s es requerido');
@@ -35,15 +40,19 @@
             $this->load->view('usuario/correo');
         } else {
             //proceso de datos para ingresarlos
-            $this->load->model('correo_model','model');
+            $this->load->model('correo_model','modelo');
 
-            $email= $this->input->post('email');
+            $emailFrom= $this->input->post('emailFrom');
+            $emailTo= $this->input->post('emailTo');
             $asunto = $this->input->post('asunto');
             $texto = $this->input->post('texto');
 
-            $this->modelo->email=$email;
+
+            $this->modelo->emailFrom=$emailFrom;
+            $this->modelo->emailTo=$emailTo;
             $this->modelo->asunto=$asunto;
             $this->modelo->texto=$texto;
+
 
             $insertar = $this->modelo->insertar_correo($this->modelo);
 
@@ -57,6 +66,13 @@
             }
         }
     }
+
+     public function registroCompleto()
+     {
+         $this->load->helper('html');
+         $this->load->view('usuario/registroCompleto');
+
+     }
 
 
 
