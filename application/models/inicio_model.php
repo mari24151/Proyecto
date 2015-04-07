@@ -8,23 +8,18 @@ class inicio_model extends CI_Model{
 
     }
 
-    public function validar($email,$contrasena){
-
+    function authenticar($email, $contrasena)
+    {
+        $this->db->select('id');
         $this->db->where('email', $email);
         $this->db->where('contrasena', $contrasena);
-
-        $query= $this->db->get('usuario');
-
-        if($query->num_row == 0):
-            //usuario no existe
-            return 0;
-
-            else:
-                //usuario correcto
-                return 1;
-
-            endif;
-
+        $query=$this->db->get('usuario');
+        if($query->num_rows() == 1)
+        {
+            redirect('usuario/registroCompleto');
+        }else{
+            //levantar el mensaje incorrecto
+        }
     }
 
 

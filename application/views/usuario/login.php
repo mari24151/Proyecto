@@ -15,7 +15,7 @@
 
 <body>
 
-<?= form_open('usuario/iniciarSesion');?>
+<?= form_open('inicio/verificar');?>
 <!--login-->
 <div id="j">
     <div style="margin-left: 542px; margin-top: 213px; margin-right: 644px;">
@@ -29,7 +29,7 @@
                 <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Password">
             </div>
             <br>
-            <input type="button" class="btn btn-default"<a href="usuario/correo">Aceptar</a>>
+            <input type="submit" class="btn btn-default" value="Aceptar">
 
         <a href="usuario/registro" class="btn btn-default">Registrarse</a>
     </div>

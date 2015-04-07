@@ -38,8 +38,7 @@
 |
 */
 
-$route['inicio/proceso']="inicio/proceso";
-
+$route['inicio/verificar']="inicio/verificar";
 $route['usuario/insertar'] = "usuario/insertar";
 
 $route['default_controller'] = "usuario/login";
