@@ -15,6 +15,7 @@
          $this->load->view('usuario/correo');
      }
 
+     //insertar un nuevo correo
     public function insertar()
     {
         $this->load->library('form_validation');

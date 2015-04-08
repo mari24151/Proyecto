@@ -18,7 +18,7 @@ class inicio_model extends CI_Model{
         {
             redirect('usuario/registroCompleto');
         }else{
-            //levantar el mensaje incorrecto
+            redirect('');
         }
     }
 

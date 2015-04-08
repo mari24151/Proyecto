@@ -15,7 +15,7 @@
 
 <body>
 
-<?= form_open('inicio/verificar');?>
+<?= form_open('usuario/verificar');?>
 <!--login-->
 <div id="j">
     <div style="margin-left: 542px; margin-top: 213px; margin-right: 644px;">
