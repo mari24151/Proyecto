@@ -33,4 +33,25 @@ class entrada_model extends CI_Model{
         $this->db->where('id',$id);
         return $this->db->delete('emails');
     }
+
+    public function extraerCorreo($id = false)
+    {
+        if($id === false)
+        {
+            $this->db->select('id','emailFrom','emailTo','asunto','texto','pendiente');
+            $this->db->from('emails');
+            //$this->db->join('emailTo', 'emailTo.id = emails.id');
+        }else{
+            $this->db->select('id','emailFrom','emailTo','asunto','texto','pendiente');
+            $this->db->from('emails');
+            //$this->db->join('emailTo', 'emailTo.id = emails.id');
+            $this->db->where('emailTo',$id);
+        }
+        $query = $this->db->get();
+
+        if($query->num_rows() > 0 )
+        {
+            return $query->result();
+        }
+    }
 }
