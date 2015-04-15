@@ -33,7 +33,7 @@
         <textarea class="form-control" name="texto"></textarea>
         <br>
         <br>
-        <input type="button" name="enviar" class="btn btn-default" value="Aceptar">
+        <input type="button" name="enviar" class="btn btn-default" value="Enviar">
     </form>
 </div>
 

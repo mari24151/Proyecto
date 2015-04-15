@@ -9,7 +9,7 @@
         $this->load->helper('form');
         $this->load->view('usuario/registro');
     }
-
+     //funcion de agregar
     public function insertar()
     {
         // Carga la libreria de validacion
@@ -36,15 +36,20 @@
 
             // Procesa los datos para ingresarlos
             $this->load->model('usuario_model', 'modelo');
+            // Carga libreria de encriptamiento
+            $this->load->library('encrypt');
 
 
             $nombre = $this->input->post('nombre');
             $email = $this->input->post('email');
             $contrasena = $this->input->post('contrasena');
+            // encrypta la contraseña
+            $contrasena_encrypt = $this->encrypt->sha1($contrasena);
 
             $this->modelo->nombre = $nombre;
             $this->modelo->email = $email;
-            $this->modelo->contrasena = $contrasena;
+            //guarda la contraseña encryptada
+            $this->modelo->contrasena = $contrasena_encrypt;
 
             $insertar = $this->modelo->insertar_usuario($this->modelo);
 
@@ -59,48 +64,53 @@
         }
     }
 
-    public function login()
-    {
-        $this->load->helper('html');
-        $this->load->helper('form');
-        $this->load->view('usuario/login');
-
-    }
-
-    public function iniciarSesion()
-    {
-        echo 1;
-    }
 
 
+    //funcion de envio de correos
     public function envioCorreo()
     {
+
+        $to = "bryan@mundoteconline.com";
+        $subject = "My subject";
+        $txt = "Hello world!";
+        $headers = "From: webmaster@example.com" . "\r\n" .
+            "CC: somebodyelse@example.com";
+
+        mail($to,$subject,$txt,$headers);
+
+
         //configuracion del email
-
-
-        $emailConfig = array(
-            'protocol' => 'smtp',
-            'smtp_host' => 'smtp.gmail.com',
-            'smtp_port' => 465,
-            'smtp_user' => 'ale.24151@gmail.com',
-            'smtp_pass' => 'amrm24151',
-            'mailtype'  => 'html',
-            'charset'   => 'iso-8859-1'
-        );
-
-        $this->load->library('email', $emailConfig);
-
-        $this->email->set_newline("rn");
-
-        //archivos de configuracion
-        $this->email->from('ale.24151@gmail.com', 'Alexa Rodríguez Méndez');
-        $this->email->to('ale.24151@gmail.com');
-        $this->email->subject('Cuenta activa');
-        $this->email->message('Tu cuenta ha sido activa, ya puedes iniciar seción con exito');
-
-        $this->email->send();
-
-        echo $this->email->print_debugger();
+//
+//        $this->load->library('email');
+//
+//        $emailConfig = array(
+//            'protocol' => 'smtp',
+//            'smtp_host' => 'ssl://smtp.gmail.com',
+//            'smtp_port' => 465,
+//            'smtp_user' => 'ale.24151@gmail.com',
+//            'smtp_pass' => 'amrm24151',
+//            'mailtype'  => 'html',
+//            'charset'   => 'utf-8',
+//            'newline'   =>  '\r\n'
+//        );
+//
+//       $this->load->initialize($emailConfig);
+//
+//        $this->email->set_newline("rn");
+//
+//        //archivos de configuracion
+//        $this->email->from('ale.24151@gmail.com', 'Alexa Rodríguez Méndez');
+//        $this->email->to('ale.24151@gmail.com');
+//        $this->email->subject('Cuenta activa');
+//        $this->email->message('Tu cuenta ha sido activa, ya puedes iniciar seción con exito');
+//
+//        if($this->email->send())
+//        {
+//            echo 'Your email was sent.';
+//        }else
+//        {
+//            show_error($this->email->print_debugger());
+//        }
     }
 
     public function registroCompleto()

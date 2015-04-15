@@ -15,10 +15,12 @@
 
 <body>
 
-<?= form_open('usuario/verificar');?>
+<?= form_open('login/verificar');?>
 <!--login-->
 <div id="j">
     <div style="margin-left: 542px; margin-top: 213px; margin-right: 644px;">
+
+        <?php echo $mensaje;?>
 
             <div class="form-group">
                 <label for="email" style=" color: cornsilk;"><span class="glyphicon glyphicon-envelope"></span> Correo</label><br>
