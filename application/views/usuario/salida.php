@@ -5,9 +5,9 @@
     <title>Bandeja de entrada</title>
     <!--Link de bootstrap-->
     <?php echo link_tag('css\bootstrap.min.css') ?>
-      <!--Link de jquery-->
-      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-       <!--estilos propios-->
+    <!--Link de jquery-->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!--estilos propios-->
     <?php echo link_tag('css\estilos.css') ?>
 
 </head>
@@ -29,24 +29,21 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Buz&oacute;n Entrada</a></li>
-                <li><a href="#">Buz&oacute;n Salida</a></li>
+                <li><a href="#">Buz&oacute;n Entrada</a></li>
+                <li class="active"><a href="#">Buz&oacute;n Salida</a></li>
                 <li><a href="">Salir</a></li>
             </ul>
         </div>
--    </div>
+    </div>
 </nav>
 
 <div>
-  <div id="container">
+    <div id="container">
 
         <ul class="nav nav-tabs nav-justified">
             <table class="table">
 
-                <?php foreach ($correos as $correo) {
-                    echo "id: {$correo->id} - emailFrom {$correo->emailFrom} - emailTo{$correo->emailTo} - asunto{$correo->asunto} -texto{$correo->texto}";
-                    echo "<br/>";
-                } ?>
+
 
             </table>
         </ul>

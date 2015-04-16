@@ -23,6 +23,7 @@
          $resultado= $this->modelo->obtenerCorreos();
 
          $datos['correos']= $resultado;
+
          $this->load->view('usuario/entrada',$datos);
      }
 
