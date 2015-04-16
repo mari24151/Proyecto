@@ -15,10 +15,15 @@
      {
          $this->load->helper('html');
          $this->load->helper('form');
-         //$this->modelo->extraerCorreo(1);
-         $this->modelo->verCorreo();
-         $this->load->view('usuario/entrada');
 
+
+     }
+
+     public function ver(){
+         $resultado= $this->modelo->obtenerCorreos();
+
+         $datos['correos']= $resultado;
+         $this->load->view('usuario/entrada',$datos);
      }
 
 
@@ -51,11 +56,11 @@
 //     }
 
 
-//     public function eliminarCorreo(){
-//
-//         $id = $this->uri->segment(3);
-//        $delete = $this->entrada_model->eliminar($id);
-//     }
+     public function eliminarCorreo(){
+
+         $id = $this->uri->segment(3);
+        $delete = $this->entrada_model->eliminar($id);
+    }
 
 
 

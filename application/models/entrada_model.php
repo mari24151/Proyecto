@@ -11,20 +11,10 @@ class entrada_model extends CI_Model{
     }
 
     //mostrar correo
-    public function verCorreo(){
-        //hacemos consulta a la base de datos
-       // $ver = $this->db->get('emails');
+    public function obtenerCorreos(){
 
-        //devolvemos el resultado de la consulta
-        //return $ver->result();
-
-        $ver = $this->db->get('emails');
-        if($ver->num_rows()>0)
-        {
-           return $ver;
-        }else{
-            return false;
-        }
+        $ver= $this->db->get('emails');
+        return $ver->result();
     }
 
     //eliminar correos

@@ -38,7 +38,8 @@
 |
 */
 
-$route['entrada']="entrada/index";
+$route['entrada']="entrada/obtenerCorreos";
+
 $route['correoNuevo/insertar']="correoNuevo/insertar";
 
 $route['inicio/verificar']="inicio/verificar";

@@ -71,7 +71,7 @@
 
 <div>
     <div>
-        <?= form_open('entrada/index');?>
+        <?= form_open('entrada/obtenerCorreos');?>
         <ul class="nav nav-tabs nav-justified">
             <table class="table">
 
