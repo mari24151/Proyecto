@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Correo</title>
+    <title>Bandeja de entrada</title>
     <!--Link de bootstrap-->
     <?php echo link_tag('css\bootstrap.min.css') ?>
     <!--Link de jquery-->
@@ -15,28 +15,77 @@
 
 <body>
 
+<?= form_open('correoNuevo/insertar');?>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-9">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Correo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Buz&oacute;n Entrada</a></li>
+                <li><a href="#">Buz&oacute;n Salida</a></li>
+                <li><a href="usuario/login">Salir</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <div>
+
     <form action="" method="post">
-        <div class="col-sm-10">
-            <label for="email" style=" color: rgb(91, 250, 13);">Email</label>
-            <input class="form-control" type="email" id="email" name="email" placeholder="exemple@alguien.com">
+        <div class="form-group">
+            <label for="emailFrom" style=" color: rgb(91, 250, 13);">EmailFrom</label>
+            <input class="form-control" type="email" id="emailFrom" name="emailFrom" placeholder="exemple@alguien.com">
         </div>
-        <br>
-        <div class="col-sm-10">
+
+        <div class="form-group">
+            <label for="emailTo" style=" color: rgb(91, 250, 13);">Email</label>
+            <input class="form-control" type="email" id="emailTo" name="emailTo" placeholder="exemple@alguien.com">
+        </div>
+
+        <div class="form-group">
             <label for="asunto" style=" color: rgb(91, 250, 13);">Asunto</label>
             <input class="form-control" type="text" id="asunto" name="asunto" placeholder="Asunto">
         </div>
-        <br>
-        <br>
-        <br>
-        <textarea class="form-control" name="texto"></textarea>
-        <br>
-        <br>
-        <input type="button" name="enviar" class="btn btn-default" value="Enviar">
+        <div class="form-group">
+            <label for="texto" style=" color: rgb(91, 250, 13);">Texto</label>
+            <textarea cols="2" rows="7" class="form-control" name="texto"></textarea>
+        </div>
+
+        <input type="submit" name="enviar" class="btn btn-default" value="Enviar">
+        <input type="reset" name="cancelar" class="btn btn-default" value="Cancelar">
     </form>
+    <?= form_close();?>
+    <?= validation_errors();?>
+
+    <div>
+        <ul class="nav nav-tabs nav-justified">
+            <table class="table">
+
+            </table>
+        </ul>
+    </div>
 </div>
 
+<div>
+    <div>
+        <ul class="nav nav-tabs nav-justified">
+            <table class="table">
+
+            </table>
+        </ul>
+    </div>
+    <script type="application/javascript" src="js/login.js"></script>
+</div>
 
 </body>
 </html>

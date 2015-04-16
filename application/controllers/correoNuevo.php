@@ -24,9 +24,11 @@
         //libreria de validacion
         $this->load->library('form_validation');
 
+
+
         //establece reglas de validacion
         $this->form_validation->set_rules('emailFrom', 'CorreoDe', 'required');
-        $this->form_validation->set_rules('emailTo', 'CorreoPara', 'required');
+        $this->form_validation->set_rules('emailTo', 'Email', 'required');
         $this->form_validation->set_rules('asunto','Asunto','required');
         $this->form_validation->set_rules('texto','Texto','required');
 

@@ -37,7 +37,9 @@
 | in the URL cannot be matched to a valid route.
 |
 */
-$route['entrada/index']="entrada/index";
+
+$route['entrada']="entrada/index";
+$route['correoNuevo/insertar']="correoNuevo/insertar";
 
 $route['inicio/verificar']="inicio/verificar";
 

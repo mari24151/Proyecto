@@ -7,7 +7,7 @@ class correo_model extends CI_Model{
     public $emailTo;
     public $asunto;
     public $texto;
-    public $pendiente;
+    public $pendiente = false;
 
     //constructor del modelo
     public function __construct(){

@@ -7,7 +7,20 @@
 
          parent:: __construct();
          $this->load->model('entrada_model','modelo');
+
      }
+
+     //funcion index
+     public function index()
+     {
+         $this->load->helper('html');
+         $this->load->helper('form');
+         //$this->modelo->extraerCorreo(1);
+         $this->modelo->verCorreo();
+         $this->load->view('usuario/entrada');
+
+     }
+
 
 //     public function send_mail($email,$nombre) {
 //         $mail = new PHPMailer();
@@ -37,22 +50,16 @@
 //         $this->load->view('sent_mail',$data);
 //     }
 
-     //funcion index
-     public function index()
-     {
-         $this->load->helper('html');
-         $this->load->helper('form');
-        // $mostrar['extraerCorreo'] = $this->entrada_model->extraerCorreo(1);
-        // $dato["verCorreo"]=$this->entrada_model->verCorreo();
-         $this->load->view('usuario/entrada');
-
-     }
 
 //     public function eliminarCorreo(){
 //
 //         $id = $this->uri->segment(3);
 //        $delete = $this->entrada_model->eliminar($id);
 //     }
+
+
+
+
 
 }
 

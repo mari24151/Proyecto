@@ -10,6 +10,7 @@ class entrada_model extends CI_Model{
         $this->load->database();
     }
 
+    //mostrar correo
     public function verCorreo(){
         //hacemos consulta a la base de datos
        // $ver = $this->db->get('emails');
@@ -20,20 +21,20 @@ class entrada_model extends CI_Model{
         $ver = $this->db->get('emails');
         if($ver->num_rows()>0)
         {
-            foreach ($ver->result() as $fila)
-            {
-                $dato[] = $fila;
-            }
-            return $dato;
+           return $ver;
+        }else{
+            return false;
         }
     }
 
+    //eliminar correos
     public function eliminar($id){
 
         $this->db->where('id',$id);
         return $this->db->delete('emails');
     }
 
+    //extraer correos de la base de datos
     public function extraerCorreo($id = false)
     {
         if($id === false)
@@ -45,7 +46,7 @@ class entrada_model extends CI_Model{
             $this->db->select('id','emailFrom','emailTo','asunto','texto','pendiente');
             $this->db->from('emails');
             //$this->db->join('emailTo', 'emailTo.id = emails.id');
-            $this->db->where('emails',$id);
+            $this->db->where('id',$id);
         }
         $query = $this->db->get();
 
