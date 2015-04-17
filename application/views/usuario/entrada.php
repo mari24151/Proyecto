@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>Bandeja de entrada</title>
     <!--Link de bootstrap-->
-    <?php //echo link_tag('css\bootstrap.min.css') ?>
+    <?php echo link_tag('css\bootstrap.min.css') ?>
       <!--Link de jquery-->
       <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
        <!--estilos propios-->
-    <?php //echo link_tag('css\estilos.css') ?>
+    <?php echo link_tag('css\estilos.css') ?>
 
 </head>
 
@@ -40,8 +40,8 @@
 <div>
   <div id="container">
         <ul class="nav nav-tabs nav-justified">
-            <table class="table">
-                <?php foreach ($correos as $cr)?>
+            <table class="table table-striped">
+
                 <tr>
                     <td><strong>id</strong></td>
                     <td><strong>emailFrom</strong></td>
@@ -49,7 +49,7 @@
                     <td><strong>asunto</strong></td>
                     <td><strong>texto</strong></td>
                 </tr>
-
+                <?php foreach ($correos as $cr): ?>
                 <tr>
                     <td><?php echo"{$cr->id}"?></td>
                     <td><?php echo"{$cr->emailFrom}"?></td>
@@ -57,7 +57,7 @@
                     <td><?php echo"{$cr->asunto}"?></td>
                     <td><?php echo"{$cr->texto}"?></td>
                 </tr>
-               
+                <?php endforeach;?>
             </table>
         </ul>
     </div>
