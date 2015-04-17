@@ -23,8 +23,14 @@
          $resultado= $this->modelo->obtenerCorreos();
 
          $datos['correos']= $resultado;
-         $datos['title']="hola";
          $this->load->view('usuario/entrada',$datos);
+     }
+//eliminar correos
+     public function eliminarCorreo(){
+
+         $id = $this->uri->segment(1);
+         $delete = $this->model->eliminar($id);
+            redirect('usuario/entrada',$delete);
      }
 
 
@@ -55,17 +61,6 @@
 //         }
 //         $this->load->view('sent_mail',$data);
 //     }
-
-
-     public function eliminarCorreo(){
-
-         $id = $this->uri->segment(3);
-        $delete = $this->entrada_model->eliminar($id);
-    }
-
-
-
-
 
 }
 
