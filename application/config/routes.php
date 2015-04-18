@@ -38,6 +38,9 @@
 |
 */
 
+
+
+
 $route['entrada']="entrada/ver";
 
 $route['correoNuevo/insertar']="correoNuevo/insertar";

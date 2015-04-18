@@ -16,12 +16,13 @@ class entrada extends CI_Controller
     {
         $this->load->helper('html');
         $this->load->helper('form');
+        $this->load->model('salida_model','modelo');
 
 
     }
 
     //ver lista
-    public function ver(){
+    public function verSalidas(){
         $resultado= $this->modelo->obtenerCorreos();
 
         $datos['correos']= $resultado;
@@ -47,7 +48,7 @@ class entrada extends CI_Controller
 
                 $this->form_validation->set_message('required','El campo %s es requerido');
 
-                if ($this->form_validation->run() == TRUE)
+               if ($this->form_validation->run() == TRUE)
                 {
                     $emailTo = $this->input->post('emailTo');
                     $asunto = $this->input->post('asunto');

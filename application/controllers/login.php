@@ -26,12 +26,12 @@ class login extends CI_Controller
         $email = $_POST['email'];
         $contrasena = $_POST['contrasena'];
 
-        $this->load->model('usuario_model', 'usuario');
-        $validar = $this->usuario->autenticar($email, $contrasena);
+        $this->load->model('usuario_model', 'modelo');
+        $validar = $this->modelo->autenticar($email, $contrasena);
 
         if ($validar) {
 
-            redirect("correos");
+            redirect("usuario/registroCompleto");
 
         } else {
 
