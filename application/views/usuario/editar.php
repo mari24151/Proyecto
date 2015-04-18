@@ -19,20 +19,20 @@
     <div style="margin-left: 542px; margin-top: 213px; margin-right: 644px;">
 
         <div class="form-group">
-            <label for="id" style=" color: cornsilk;">Nombre</label><br>
+            <label for="id" style=" color: cornsilk;">ID</label><br>
             <input type="text" class="form-control" id="id" name="id">
         </div>
         <div class="form-group">
-            <label for="emailTo" style=" color: cornsilk;">Correo</label><br>
+            <label for="emailTo" style=" color: cornsilk;">Email</label><br>
             <input type="text" class="form-control" id="emailTo" name="emailTo">
         </div>
         <div class="form-group">
-            <label for="correo" style=" color: cornsilk;">Correo</label><br>
-            <input type="email" class="form-control" id="email" name="email">
+            <label for="asunto" style=" color: cornsilk;">Asunto</label><br>
+            <input type="email" class="form-control" id="asunto" name="asunto">
         </div>
         <div class="form-group">
-            <label for="contrasena" style=" color: cornsilk;">Contrase&ntilde;a</label><br>
-            <input type="password" class="form-control" id="contrasena" name="contrasena">
+            <label for="contenido" style=" color: cornsilk;">Contenido</label><br>
+            <textarea cols="2" rows="7" class="form-control" name="texto"></textarea>
         </div>
         <br>
         <input type="submit" class="btn btn-default" value="Agregar">
