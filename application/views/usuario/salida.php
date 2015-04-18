@@ -39,18 +39,29 @@
 
 <div>
     <div id="container">
-
         <ul class="nav nav-tabs nav-justified">
-            <table class="table">
+            <table class="table table-striped">
 
-
-
+                <tr>
+                    <td><strong>id</strong></td>
+                    <td><strong>emailFrom</strong></td>
+                    <td><strong>emailTo</strong></td>
+                    <td><strong>asunto</strong></td>
+                    <td><strong>texto</strong></td>
+                </tr>
+                <?php foreach ($correos as $cr): ?>
+                    <tr>
+                        <td><?php echo"{$cr->id}"?></td>
+                        <td><?php echo"{$cr->emailFrom}"?></td>
+                        <td><?php echo"{$cr->emailTo}"?></td>
+                        <td><?php echo"{$cr->asunto}"?></td>
+                        <td><?php echo"{$cr->texto}"?></td>
+                    </tr>
+                <?php endforeach;?>
             </table>
         </ul>
     </div>
 
 </div>
-
-
 </body>
 </html>
