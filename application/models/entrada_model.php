@@ -26,4 +26,15 @@ class entrada_model extends CI_Model
         $this->db->where('id', $id);
         return $this->db->delete('emails');
     }
+
+    //obtenemos la fila completa del mensaje a editar
+    //vemos que como solo queremos una fila utilizamos
+    //la función row que sólo nos devuelve una fila,
+    //así la consulta será más rápida
+    function obtener($id) {
+        $this->db->where('id', $id);
+        $query = $this->db->get('emails');
+        $fila = $query->row();
+        return $fila;
+    }
 }
