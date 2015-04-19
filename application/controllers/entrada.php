@@ -15,8 +15,7 @@
      {
          $this->load->helper('html');
          $this->load->helper('form');
-
-
+         $this->load->helper('url');
      }
 
      public function ver(){
@@ -26,11 +25,12 @@
          $this->load->view('usuario/entrada',$datos);
      }
 //eliminar correos
-     public function eliminarCorreo(){
+     public function eliminarCorreo($id){
 
-         $id = $this->uri->segment(1);
-         $delete = $this->model->eliminar($id);
-            redirect('usuario/entrada',$delete);
+         //$id = $this->uri->segment(1);
+         $delete = $this->modelo->eliminar($id);
+         //redirect('usuario/registroCompleto',$delete);
+         $this->load->view('usuario/entrada',$delete);
      }
 
 
