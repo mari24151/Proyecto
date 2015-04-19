@@ -23,7 +23,6 @@ class entrada_model extends CI_Model
     //eliminar correos
     public function eliminar($id)
     {
-
         $this->db->where('id', $id);
         return $this->db->delete('emails');
     }

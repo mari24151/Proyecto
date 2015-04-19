@@ -29,10 +29,66 @@
 
          //$id = $this->uri->segment(1);
          $delete = $this->modelo->eliminar($id);
-         //redirect('usuario/registroCompleto',$delete);
+         //redirect('usuario/entrada',$delete);
          $this->load->view('usuario/entrada',$delete);
      }
 
+    function mostrar_datos()
+    {
+        //recuperamos la id que hemos envíado por ajax
+        $id = $this->input->post('id');
+        //solicitamos al modelo los datos de esa id
+        $edicion = $this->datos_model->obtener($id);
+        //recorremos el array con los datos de ese id
+        //y creamos el formulario con el helper form
+
+        $nombre = array(
+            'name' => 'nombre',
+            'id' => 'nombre',
+            'value' => $edicion->nombre
+        );
+        $email = array(
+            'name' => 'email',
+            'id' => 'email',
+            'value' => $edicion->email
+        );
+        $asunto = array(
+            'name' => 'asunto',
+            'id' => 'asunto',
+            'value' => $edicion->asunto
+        );
+        $mensaje = array(
+            'name' => 'mensaje',
+            'id' => 'mensaje',
+            'cols' => '50',
+            'rows' => '6',
+            'value' => $edicion->mensaje
+        );
+        $submit = array(
+            'name' => 'editando',
+            'id' => 'editando',
+            'value' => 'Editar mensaje'
+        );
+        $oculto = array(
+            'id_mensaje' => $id
+        );
+
+        //mostramos el formulario con los datos cargados
+        ?>
+        <?= form_open(base_url() . 'datos/actualizar_datos','', $oculto) ?>
+        <?= form_label('Nombre') ?>
+        <?= form_input($nombre) ?>
+        <?= form_label('Email') ?>
+        <?= form_input($email) ?>
+        <?= form_label('Asunto') ?>
+        <?= form_input($asunto) ?>
+        <?= form_label('Mensaje') ?>
+        <?= form_textarea($mensaje) ?>
+
+        <?= form_submit($submit) ?>
+        <?php echo form_close() ?>
+    <?php
+    }
 
 //     public function send_mail($email,$nombre) {
 //         $mail = new PHPMailer();
