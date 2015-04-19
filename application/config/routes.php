@@ -37,9 +37,8 @@
 | in the URL cannot be matched to a valid route.
 |
 */
-
-
-
+$route['usuario/editar']="usuario/editar";
+$route['entrada/eliminarCorreo']="entrada/eliminarCorreo";
 
 $route['entrada']="entrada/ver";
 

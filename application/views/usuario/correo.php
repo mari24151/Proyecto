@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Bandeja de entrada</title>
+    <title>Correo</title>
     <!--Link de bootstrap-->
     <?php echo link_tag('css\bootstrap.min.css') ?>
     <!--Link de jquery-->
