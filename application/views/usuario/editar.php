@@ -20,22 +20,22 @@
         <?php foreach ($actu as $ac): ?>
         <div class="form-group">
             <label for="id" style=" color: cornsilk;">ID</label><br>
-            <input type="text" class="form-control" id="id" name="id" value="<?php echo"{$ac->id}"?>">
+            <input type="text" class="form-control" id="id" name="id" value="<?php //echo"{$ac->id}"?>">
         </div>
         <div class="form-group">
             <label for="emailTo" style=" color: cornsilk;">Email</label><br>
-            <input type="text" class="form-control" id="emailTo" name="emailTo" value="<?php echo"{$ac->emailTo}"?>">
+            <input type="text" class="form-control" id="emailTo" name="emailTo" value="<?php //echo"{$ac->emailTo}"?>">
         </div>
         <div class="form-group">
             <label for="asunto" style=" color: cornsilk;">Asunto</label><br>
-            <input type="email" class="form-control" id="asunto" name="asunto" value="<?php echo"{$ac->asunto}"?>">
+            <input type="email" class="form-control" id="asunto" name="asunto" value="<?php //echo"{$ac->asunto}"?>">
         </div>
         <div class="form-group">
             <label for="contenido" style=" color: cornsilk;">Contenido</label><br>
             <textarea cols="2" rows="7" class="form-control" name="texto"></textarea>
         </div>
         <br>
-        <input type="submit" class="btn btn-default" value="Agregar">
+        <a onclick= href="entrada/editar/<?=$ac->id?>">Aceptar</a>
         <input type="reset" class="btn btn-default" id="k" value="Cancelar">
     </div>
     <?php endforeach;?>

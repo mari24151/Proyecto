@@ -59,7 +59,7 @@
         </ul>
   </div>
 
-    <a href="usuario/editar" class="btn btn-default">Editar</a>
+    <a onclick= href="usuario/editar/">Editar</a>
     <a onclick= href="entrada/eliminarCorreo/<?=$cr->id?>">Eliminar</a>
     <?php endforeach;?>
 </div>
