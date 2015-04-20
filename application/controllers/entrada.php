@@ -35,6 +35,18 @@
 
 
 
+    public function editar($id){
+
+        $datos['edit']=$this->modelo->editarCorreo();
+
+        if($this->uri->segment(3)!=''){
+
+        }
+    }
+
+
+
+
 //     public function send_mail($email,$nombre) {
 //         $mail = new PHPMailer();
 //         $mail->IsSMTP(); // establecemos que utilizaremos SMTP

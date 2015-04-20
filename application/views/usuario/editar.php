@@ -17,7 +17,7 @@
 <!--editar-->
 <div id="j">
     <div style="margin-left: 542px; margin-top: 213px; margin-right: 644px;">
-
+<form method="post" action="<?php echo base_url() . "entrada/editarCorreo"?>">
         <div class="form-group">
             <label for="id" style=" color: cornsilk;">ID</label><br>
             <input type="text" class="form-control" id="id" name="id">
@@ -38,11 +38,7 @@
         <input type="submit" class="btn btn-default" value="Agregar">
         <input type="reset" class="btn btn-default" id="k" value="Cancelar">
     </div>
-
+    </form>
 </div>
-<?= form_close();?>
-
-
-
 </body>
 </html>

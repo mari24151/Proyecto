@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>Bandeja de entrada</title>
     <!--Link de bootstrap-->
-    <?php //echo link_tag('css\bootstrap.min.css') ?>
+    <?php echo link_tag('css\bootstrap.min.css') ?>
       <!--Link de jquery-->
       <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
        <!--estilos propios-->
-    <?php //echo link_tag('css\estilos.css') ?>
+    <?php echo link_tag('css\estilos.css') ?>
 </head>
 
 
