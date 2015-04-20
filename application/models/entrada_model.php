@@ -15,7 +15,6 @@ class entrada_model extends CI_Model
     //mostrar correo
     public function obtenerCorreos()
     {
-
         $ver = $this->db->get('emails');
         return $ver->result();
     }
@@ -27,14 +26,22 @@ class entrada_model extends CI_Model
         return $this->db->delete('emails');
     }
 
-    //obtenemos la fila completa del mensaje a editar
-    //vemos que como solo queremos una fila utilizamos
-    //la función row que sólo nos devuelve una fila,
-    //así la consulta será más rápida
-    function obtener($id) {
-        $this->db->where('id', $id);
-        $query = $this->db->get('emails');
-        $fila = $query->row();
-        return $fila;
+    //ver solo un correo
+    public function verUnCorreo(){
+
+        $this->db->order_by('id');
+
+        $ver= $this->db->get('emails');
+        return $ver->result();
     }
+
+    //editar correos
+    public function editarCorreo($id){
+
+        $this->db->where('id',$id);
+
+        $mostrar = $this->db->get('emails');
+        return $mostrar->row();
+    }
+
 }

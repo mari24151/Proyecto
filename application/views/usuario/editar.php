@@ -17,18 +17,18 @@
 <!--editar-->
 <div id="j">
     <div style="margin-left: 542px; margin-top: 213px; margin-right: 644px;">
-<form method="post" action="<?php echo base_url() . "entrada/editarCorreo"?>">
+        <?php foreach ($actu as $ac): ?>
         <div class="form-group">
             <label for="id" style=" color: cornsilk;">ID</label><br>
-            <input type="text" class="form-control" id="id" name="id">
+            <input type="text" class="form-control" id="id" name="id" value="<?php echo"{$ac->id}"?>">
         </div>
         <div class="form-group">
             <label for="emailTo" style=" color: cornsilk;">Email</label><br>
-            <input type="text" class="form-control" id="emailTo" name="emailTo">
+            <input type="text" class="form-control" id="emailTo" name="emailTo" value="<?php echo"{$ac->emailTo}"?>">
         </div>
         <div class="form-group">
             <label for="asunto" style=" color: cornsilk;">Asunto</label><br>
-            <input type="email" class="form-control" id="asunto" name="asunto">
+            <input type="email" class="form-control" id="asunto" name="asunto" value="<?php echo"{$ac->asunto}"?>">
         </div>
         <div class="form-group">
             <label for="contenido" style=" color: cornsilk;">Contenido</label><br>
@@ -38,7 +38,7 @@
         <input type="submit" class="btn btn-default" value="Agregar">
         <input type="reset" class="btn btn-default" id="k" value="Cancelar">
     </div>
-    </form>
+    <?php endforeach;?>
 </div>
 </body>
 </html>

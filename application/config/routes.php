@@ -38,7 +38,7 @@
 |
 */
 
-$route['editar']="usuario/editar";
+$route['editar']="entrada/editar";
 
 $route['entrada/eliminarCorreo']="entrada/eliminarCorreo";
 

@@ -18,13 +18,14 @@
          $this->load->helper('url');
      }
 
+     //ver lista de los correos de la base de datos
      public function ver(){
          $resultado= $this->modelo->obtenerCorreos();
 
          $datos['correos']= $resultado;
          $this->load->view('usuario/entrada',$datos);
      }
-//eliminar correos
+     //eliminar correos
      public function eliminarCorreo($id){
 
          //$id = $this->uri->segment(1);
@@ -34,13 +35,23 @@
      }
 
 
+     //ver solo una linea de correo
+     public function mostrar(){
 
-    public function editar($id){
+         $datos['edit']= $this->modelo->verUnCorreo();
+         $this->load->view('usuario/editar', $datos);
+     }
 
-        $datos['edit']=$this->modelo->editarCorreo();
+    public function editar(){
 
-        if($this->uri->segment(3)!=''){
+        $datos['edit']= $this->modelo->verUnCorreo();
 
+        if($this->uri->segment(3) != ''){
+
+            $id= $this->uri->segment(3);
+            $datos['actu']= $this->modelo->editarCorreo($id);
+
+            $this->load->view('usuario/editar', $datos);
         }
     }
 
