@@ -65,70 +65,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
+      <file leaf-file-name="entrada_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/entrada_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340">
-              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="986">
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding>
-                <element signature="n#index#0;n#login#0;n#!!top" expanded="false" />
-                <element signature="n#verificar#0;n#login#0;n#!!top" expanded="false" />
-                <element signature="n#enviarCorreo#0;n#login#0;n#!!top" expanded="false" />
+                <element signature="n#eliminar#0;n#entrada_model#0;n#!!top" expanded="false" />
+                <element signature="n#verUnCorreo#0;n#entrada_model#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="envio.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/envio.php">
+      <file leaf-file-name="entrada.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/entrada.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75622773" vertical-offset="0" max-vertical-offset="562">
-              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.93950176" vertical-offset="271" max-vertical-offset="1462">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <element signature="n#eliminarCorreo#0;n#entrada#0;n#!!top" expanded="false" />
+                <element signature="n#editar#0;n#entrada#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entrada.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/usuario/entrada.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.807692" vertical-offset="505" max-vertical-offset="1377">
+              <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="salida.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/salida.php">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6153846" vertical-offset="16" max-vertical-offset="578">
-              <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-              <folding>
-                <element signature="n#index#0;n#entrada#0;n#!!top" expanded="false" />
-                <element signature="n#verSalidas#0;n#entrada#0;n#!!top" expanded="false" />
-                <element signature="n#editar#0;n#entrada#0;n#!!top" expanded="false" />
-                <element signature="n#eliminar#0;n#entrada#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usuario.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/usuario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="493">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-              <folding>
-                <element signature="n#registro#0;n#usuario#0;n#!!top" expanded="false" />
-                <element signature="n#insertar#0;n#usuario#0;n#!!top" expanded="false" />
-                <element signature="n#envioCorreo#0;n#usuario#0;n#!!top" expanded="false" />
-                <element signature="n#registroCompleto#0;n#usuario#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="correoNuevo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/correoNuevo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="510">
-              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-              <folding>
-                <element signature="n#index#0;n#correoNuevo#0;n#!!top" expanded="false" />
-                <element signature="n#insertar#0;n#correoNuevo#0;n#!!top" expanded="false" />
-                <element signature="n#registroCompleto#0;n#correoNuevo#0;n#!!top" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-5.269231" vertical-offset="543" max-vertical-offset="1224">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,16 +143,16 @@
         <option value="$PROJECT_DIR$/application/views/usuario/salida.php" />
         <option value="$PROJECT_DIR$/application/views/usuario/correo.php" />
         <option value="$PROJECT_DIR$/application/views/usuario/editar.php" />
-        <option value="$PROJECT_DIR$/application/controllers/entrada.php" />
         <option value="$PROJECT_DIR$/application/views/usuario/ver.php" />
-        <option value="$PROJECT_DIR$/application/views/usuario/entrada.php" />
         <option value="$PROJECT_DIR$/application/models/entrada_model.php" />
         <option value="$PROJECT_DIR$/application/views/usuario/registro.php" />
-        <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/views/usuario/registroCompleto.php" />
-        <option value="$PROJECT_DIR$/application/views/usuario/login.php" />
         <option value="$PROJECT_DIR$/application/controllers/correoNuevo.php" />
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/controllers/login.php" />
+        <option value="$PROJECT_DIR$/application/views/usuario/login.php" />
+        <option value="$PROJECT_DIR$/application/views/usuario/entrada.php" />
+        <option value="$PROJECT_DIR$/application/controllers/entrada.php" />
         <option value="$PROJECT_DIR$/application/controllers/envio.php" />
       </list>
     </option>
@@ -299,6 +277,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeIgniter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Proyecto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -379,7 +375,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -426,13 +422,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controllers/usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="561">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/usuario_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
@@ -711,41 +700,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/entrada.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5142349" vertical-offset="442" max-vertical-offset="1445">
-          <caret line="60" column="39" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="39" />
-          <folding>
-            <element signature="n#eliminarCorreo#0;n#entrada#0;n#!!top" expanded="false" />
-            <element signature="n#editar#0;n#entrada#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/entrada_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90925264" vertical-offset="305" max-vertical-offset="986">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-          <folding>
-            <element signature="n#eliminar#0;n#entrada_model#0;n#!!top" expanded="false" />
-            <element signature="n#verUnCorreo#0;n#entrada_model#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/usuario/entrada.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93950176" vertical-offset="628" max-vertical-offset="1258">
-          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/usuario/registroCompleto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62112933" vertical-offset="322" max-vertical-offset="952">
+          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/profiler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33274022" vertical-offset="0" max-vertical-offset="562">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+          <folding>
+            <element signature="n#index#0;n#login#0;n#!!top" expanded="false" />
+            <element signature="n#verificar#0;n#login#0;n#!!top" expanded="false" />
+            <element signature="n#enviarCorreo#0;n#login#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/salida.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21352313" vertical-offset="16" max-vertical-offset="578">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding>
+            <element signature="n#index#0;n#entrada#0;n#!!top" expanded="false" />
+            <element signature="n#verSalidas#0;n#entrada#0;n#!!top" expanded="false" />
+            <element signature="n#editar#0;n#entrada#0;n#!!top" expanded="false" />
+            <element signature="n#eliminar#0;n#entrada#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15124555" vertical-offset="0" max-vertical-offset="562">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <element signature="n#registro#0;n#usuario#0;n#!!top" expanded="false" />
+            <element signature="n#insertar#0;n#usuario#0;n#!!top" expanded="false" />
+            <element signature="n#envioCorreo#0;n#usuario#0;n#!!top" expanded="false" />
+            <element signature="n#registroCompleto#0;n#usuario#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/correoNuevo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5747331" vertical-offset="0" max-vertical-offset="562">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="n#index#0;n#correoNuevo#0;n#!!top" expanded="false" />
+            <element signature="n#insertar#0;n#correoNuevo#0;n#!!top" expanded="false" />
+            <element signature="n#registroCompleto#0;n#correoNuevo#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -759,83 +784,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30427048" vertical-offset="492" max-vertical-offset="1156">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/usuario/registroCompleto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62112933" vertical-offset="322" max-vertical-offset="952">
-          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+        <state vertical-scroll-proportion="-5.269231" vertical-offset="543" max-vertical-offset="1224">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/usuario/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6502732" vertical-offset="459" max-vertical-offset="1224">
-          <caret line="48" column="63" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.4335155" vertical-offset="0" max-vertical-offset="1224">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/salida.php">
+    <entry file="file://$PROJECT_DIR$/application/models/entrada_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6153846" vertical-offset="16" max-vertical-offset="578">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="986">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
-            <element signature="n#index#0;n#entrada#0;n#!!top" expanded="false" />
-            <element signature="n#verSalidas#0;n#entrada#0;n#!!top" expanded="false" />
-            <element signature="n#editar#0;n#entrada#0;n#!!top" expanded="false" />
-            <element signature="n#eliminar#0;n#entrada#0;n#!!top" expanded="false" />
+            <element signature="n#eliminar#0;n#entrada_model#0;n#!!top" expanded="false" />
+            <element signature="n#verUnCorreo#0;n#entrada_model#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/correoNuevo.php">
+    <entry file="file://$PROJECT_DIR$/application/views/usuario/entrada.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="510">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="n#index#0;n#correoNuevo#0;n#!!top" expanded="false" />
-            <element signature="n#insertar#0;n#correoNuevo#0;n#!!top" expanded="false" />
-            <element signature="n#registroCompleto#0;n#correoNuevo#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="493">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding>
-            <element signature="n#registro#0;n#usuario#0;n#!!top" expanded="false" />
-            <element signature="n#insertar#0;n#usuario#0;n#!!top" expanded="false" />
-            <element signature="n#envioCorreo#0;n#usuario#0;n#!!top" expanded="false" />
-            <element signature="n#registroCompleto#0;n#usuario#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="n#index#0;n#login#0;n#!!top" expanded="false" />
-            <element signature="n#verificar#0;n#login#0;n#!!top" expanded="false" />
-            <element signature="n#enviarCorreo#0;n#login#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-19.807692" vertical-offset="505" max-vertical-offset="1377">
+          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/envio.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75622773" vertical-offset="0" max-vertical-offset="562">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.78647685" vertical-offset="0" max-vertical-offset="562">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/entrada.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.93950176" vertical-offset="271" max-vertical-offset="1462">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="n#eliminarCorreo#0;n#entrada#0;n#!!top" expanded="false" />
+            <element signature="n#editar#0;n#entrada#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

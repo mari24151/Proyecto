@@ -38,6 +38,10 @@
 |
 */
 
+
+
+$route['ver']= "entrada/verUno";
+
 $route['usuario/ver']= "usuario/ver";
 
 $route['editar']="entrada/editar";

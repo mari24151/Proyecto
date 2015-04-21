@@ -45,6 +45,7 @@ class login extends CI_Controller
         }
     }
 
+
     public function enviarCorreo($email,$nombre){
 
         $this->load->library('email');

@@ -25,6 +25,7 @@
          $datos['correos']= $resultado;
          $this->load->view('usuario/entrada',$datos);
      }
+
      //eliminar correos
      public function eliminarCorreo($id){
 
