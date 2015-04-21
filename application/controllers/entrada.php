@@ -55,6 +55,12 @@
         }
     }
 
+     public function verUno(){
+
+         $datos['verl']= $this->modelo->verDos();
+         $this->load->view('usuario/ver', $datos);
+     }
+
 
 
 

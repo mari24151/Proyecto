@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Bandeja de entrada</title>
+    <title>Ver</title>
     <!--Link de bootstrap-->
     <?php //echo link_tag('css\bootstrap.min.css') ?>
-      <!--Link de jquery-->
-      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-       <!--estilos propios-->
+    <!--Link de jquery-->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!--estilos propios-->
     <?php //echo link_tag('css\estilos.css') ?>
 </head>
 
@@ -36,7 +36,7 @@
 </nav>
 
 <div>
-  <div id="container">
+    <div id="container">
         <ul class="nav nav-tabs nav-justified">
             <table class="table table-striped">
 
@@ -47,21 +47,18 @@
                     <td><strong>asunto</strong></td>
                     <td><strong>texto</strong></td>
                 </tr>
-                <?php foreach ($correos as $cr): ?>
+                <?php foreach ($verl as $vr): ?>
                 <tr>
-                    <td><?php echo"{$cr->id}"?></td>
-                    <td><?php echo"{$cr->emailFrom}"?></td>
-                    <td><?php echo"{$cr->emailTo}"?></td>
-                    <td><?php echo"{$cr->asunto}"?></td>
-                    <td><?php echo"{$cr->texto}"?></td>
+                    <td><?php echo"{$vr->id}"?></td>
+                    <td><?php echo"{$vr->emailFrom}"?></td>
+                    <td><?php echo"{$vr->emailTo}"?></td>
+                    <td><?php echo"{$vr->asunto}"?></td>
+                    <td><?php echo"{$vr->texto}"?></td>
                 </tr>
             </table>
         </ul>
-  </div>
-
-    <a onclick= href="entrada/editar/<?=$cr->id?>">Editar</a>
-    <a onclick= href="entrada/eliminarCorreo/<?=$cr->id?>">Eliminar</a>
-    <a onclick= href="entrada/verUno<?=$cr->id?>">ver</a>
+    </div>
+    <input type="reset" class="btn btn-default" id="k" value="Cancelar">
     <?php endforeach;?>
 </div>
 
